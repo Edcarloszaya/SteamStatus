@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "steamstatus"
+version = "0.1.0"
+description = ""
+authors = ["Edcarlos <Edcarlos.molequedoido@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+bs4 = "*"
+requests = "*"
+pytest = "*"
+pytest-mock = "*"
+
+[tool.pytest.ini_options]
+addopts = "-ra -vvv"
+testpaths = ["tests"]
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
