@@ -18,7 +18,7 @@ while get:
 
     if action == '1':
         print("search games")
-        data_games = steamInfo.get_top_games(action)
+        data_games = steamInfo.select_data(action)
         top_games = steamInfo.content_formated(data_games,action)
         print('saving file')
         steamInfo.save_csv_gamesdata(top_games,action)
@@ -27,7 +27,7 @@ while get:
 
     elif action == '2':
         print("search games")
-        data_top_100 = steamInfo.get_top_games(action)
+        data_top_100 = steamInfo.select_data(action)
         top_100_games = steamInfo.content_formated(data_top_100,action)
         print('saving file')
         steamInfo.save_csv_gamesdata(top_100_games,action)
@@ -35,7 +35,7 @@ while get:
 
     elif action == '3':
         print("search games")
-        data_releases = steamInfo.get_top_games(action)
+        data_releases = steamInfo.select_data(action)
         popular_releases = steamInfo.content_formated(data_releases,action)
         print('saving file')
         steamInfo.save_csv_gamesdata(popular_releases,action)
@@ -44,7 +44,7 @@ while get:
 
     elif action == '4':
         print("search games")
-        data_hot = steamInfo.get_top_games(action)
+        data_hot = steamInfo.select_data(action)
         hot_releases = steamInfo.content_formated(data_hot,action)
         print('saving file')
         steamInfo.save_csv_gamesdata(hot_releases,action)
