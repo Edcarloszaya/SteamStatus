@@ -51,5 +51,5 @@ while get:
         clear_shell()
         
     elif action =='e':
-        obert = False
+        get = False
 
